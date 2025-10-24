@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>K3Y</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,5 +17,25 @@
         </ul>
     </header>
 
+<div class="box container">
+    <h1>Nothing lmao</h1>
+    <p>I need 2 add my sites sorry</p>
+    <p>I made like 2 for my exes am I cooked</p>
+
+
+</div>
+
+ <script>
+  (function(){
+    const links = document.querySelectorAll('.navbar a');
+    // get current filename (defaults to index.html)
+    const current = location.pathname.split('/').pop() || 'projects.html';
+    links.forEach(a => {
+      const href = a.getAttribute('href');
+      // compare filenames (handles same-dir links)
+      if (href === current || href.endsWith(current)) a.classList.add('active');
+    });
+  })();
+</script>
 </body>
 </html>
