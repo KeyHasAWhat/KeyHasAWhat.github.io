@@ -1,1 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap');
+:root {
+    /*Basic Colors for base of site*/
+    --text: #ffffff;
+    --bg: #1a1a1a;
+    --font: 'Lexend Giga', sans-serif;
+    /*dark Colors*/
+    --dark-bg: #131313;
+    --dark-text: #ffffff;
+    --dark-border: #000000;
+    --dark-red:#8b0000;
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+} 
+body, html {
+    height: 100%;
+    animation: fadeIn 1s ease-in;
+}
 
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+    height:1000px;
+}
+
+hr {
+    border: 1px solid var(--dark-border);
+    border-radius: 12px;
+
+    width: 60vh;
+    height: 1vh;
+    background-color: #ffffff;
+}
+
+.emoji-img {
+    width: 20vh;
+    height: 20vh;
+    vertical-align: middle;
+}
+header {
+    background-color: var(--dark-bg);
+    color: var(--header-text);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid var(--dark-border);
+}
+
+.box { 
+    border: 2px solid var(--dark-border);
+    border-radius: 15px;
+
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+
+    background-color: var(--dark-bg);
+}
