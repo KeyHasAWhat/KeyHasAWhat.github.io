@@ -43,6 +43,7 @@ hr {
     height: 20vh;
     vertical-align: middle;
 }
+
 .big-emoji{
     width: auto;       /* let width be determined by height */
     height: 20vh;      /* adjust this value as needed */
@@ -52,7 +53,6 @@ hr {
     display:block;
     margin: 0 auto;    /* center image when it drops below text (column layout) */
     flex: 0 0 auto;
-    
 }
 
 header {
