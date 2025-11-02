@@ -68,7 +68,7 @@ text-shadow: #fff 0px 0px 10px;
   border-radius: .5em;
   padding: .85em;
   text-decoration: none;
-  color: #B9B39D;
+  color: #fff;
   display: flex;
   align-items: center;
   gap: 1em;
@@ -143,14 +143,13 @@ main p{
   margin-bottom: 15px;
 }
 .container{
-  border: 1vh solid var(--line-clr);
-  border-radius: 1em;
+  
   margin-bottom: 20px;
   padding: min(3em, 15%);
   h2, p { margin-top: 1em }
 }
 .bgcontainer{
- 
+  
   border: 1px solid #000;
   box-shadow: #000 0px 0px 30px;
   border-radius: 12px;
@@ -159,11 +158,13 @@ main p{
  
 
   }
- 
+ .bgcontainer p{
+ text-align:center;
+ }
 
 
 .rcontainer {
-  display: flex;
+  display: flex ;
 align-items: center;
 vertical-align: middle;
 
@@ -174,7 +175,7 @@ vertical-align: middle;
     grid-template-columns: 1fr;
   }
    .bgcontainer {
-      padding: 10px;
+      padding: 0px;
    }
    .bgcontainer li{
       text-align: center;
@@ -187,13 +188,16 @@ vertical-align: middle;
     border: none;
     padding: 0;
   }
-   .rcontainer {
-    h1, h2, h3, h4, h5, h6, p{
-     font-size: 50%;
-    }
-    
-   
+  /* Ensure images inside .rcontainer stack below the other content */
+  .rcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+ 
+
+  
+
   #sidebar{
     height: 60px;
     width: 100%;
@@ -268,15 +272,12 @@ body, html {
 .title{
   text-align: center;
   font-size: 60px;
-  margin-bottom: 1em;
+
 }
 
 .img{
-  border: 1px solid black;
-    border-radius: 15px;
-    background-color: #220000;
-   width: auto;       /* let width be determined by height */
-    height: 20vh;      /* adjust this value as needed */
+
+       /* adjust this value as needed */
     max-width: 35%;    /* prevent image from getting too large */
     min-width: 100px;  /* prevent image from getting too small */
     object-fit: contain;
